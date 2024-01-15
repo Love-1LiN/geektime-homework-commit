@@ -4,7 +4,7 @@ from translator.pdf_parser import PDFParser
 from openai import OpenAI
 
 client = OpenAI(
-    api_key="sk-N9ByicG2IQn84YmScue2wD3xKutgr3dEnAhPI7qDXdaCFTMb",
+    api_key="sk-xxx",
     base_url="https://api.fe8.cn/v1"
 )
 
