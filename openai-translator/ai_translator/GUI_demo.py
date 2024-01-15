@@ -20,11 +20,9 @@ def get_completion(prompt, model="gpt-3.5-turbo-16k"):      # 默认使用 gpt-3
 pdf_file_path = "../tests/test.pdf"
 pdf_parser = PDFParser()
 res = pdf_parser.parse_pdf(pdf_file_path)
-
 text = res.pages[0].contents[0].original
 
 target_language = '中文'
-
 instruction = f"将下列文本翻译成{target_language}:\n{text}"
 
 res = get_completion(instruction)
