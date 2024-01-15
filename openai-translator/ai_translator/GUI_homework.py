@@ -31,6 +31,12 @@ class FirstWindow:
         self.upload_button.pack(pady=20)
         self.pdf_parser = PDFParser()
 
+        # 设置窗口的最小尺寸
+        self.master.minsize(width=300, height=200)
+
+        # 设置窗口的初始尺寸
+        self.master.geometry("400x300")
+
     def upload_pdf(self):
         # 弹出文件选择对话框
         file_path = filedialog.askopenfilename(
@@ -77,7 +83,7 @@ class FirstWindow:
 class SecondWindow:
     def __init__(self, master, original, translation):
         self.top = tk.Toplevel(master)
-        self.top.title("Second Window")
+        self.top.title("OpenAI Translator")
 
         # 第一个文本框
         self.text_frame1 = tk.Frame(self.top)
