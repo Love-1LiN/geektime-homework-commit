@@ -90,7 +90,7 @@ class SecondWindow:
         self.text_box1.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         self.text_scroll1.pack(side=tk.RIGHT, fill=tk.Y)
 
-        self.text_box1.insert(tk.END, original)  # 插入长文本
+        self.text_box1.insert(tk.END, f"原文:\n\n{original}")  # 插入长文本
 
         # 分割线
         self.separator = tk.Frame(self.top, height=2, bd=1, relief=tk.SUNKEN)
@@ -107,7 +107,7 @@ class SecondWindow:
         self.text_box2.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         self.text_scroll2.pack(side=tk.RIGHT, fill=tk.Y)
 
-        self.text_box2.insert(tk.END, translation)  # 插入长文本
+        self.text_box2.insert(tk.END, f"译文:\n\n{translation}")  # 插入长文本
 
 # 创建主窗口并运行程序
 root = tk.Tk()
