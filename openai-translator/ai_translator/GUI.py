@@ -21,18 +21,13 @@ pdf_file_path = "../tests/test.pdf"
 pdf_parser = PDFParser()
 res = pdf_parser.parse_pdf(pdf_file_path)
 
-# print(res)
 text = res.pages[0].contents[0].original
-# print(res.pages[0].contents[0].original)
-# print(res.pages[0].contents[1].original)
 
 target_language = '中文'
 
 instruction = f"将下列文本翻译成{target_language}:\n{text}"
-# print(instruction)
 
 res = get_completion(instruction)
-# print(res)
 
 # 创建主窗口
 root = tk.Tk()
