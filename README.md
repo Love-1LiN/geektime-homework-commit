@@ -4,6 +4,6 @@
 新增GUI可视化界面代码
 openai-translator/ai_translator/GUI.py
 
-新增文件上传至本地GUI界面功能
-openai-translator/ai_translator/file_upload.py
+新增PDF文件上传至本地功能
+openai-translator/ai_translator/PDF_upload.py
 
