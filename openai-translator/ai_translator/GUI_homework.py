@@ -74,29 +74,6 @@ class FirstWindow:
 
 
 # 第二个界面类
-class SecondWindow1:
-    def __init__(self, master, original_text, translation):
-        self.top = tk.Toplevel(master)
-        self.top.title("Second Window")
-
-        # 第一个文本框
-        self.text_box1 = tk.Text(self.top, height=1, width=20)
-        self.text_box1.pack(side=tk.TOP, pady=10)
-        self.text_box1.insert(tk.END, original_text)
-
-        # 分割线
-        self.separator = tk.Frame(self.top, height=2, bd=1, relief=tk.SUNKEN)
-        self.separator.pack(fill=tk.X, padx=5, pady=5)
-
-        # 第二个文本框
-        self.text_box2 = tk.Text(self.top, height=1, width=20)
-        self.text_box2.pack(side=tk.TOP, pady=10)
-        self.text_box2.insert(tk.END, translation)
-
-        # 退出按钮
-    # 创建主窗口并运行程序
-
-
 class SecondWindow:
     def __init__(self, master, original, translation):
         self.top = tk.Toplevel(master)
@@ -132,7 +109,7 @@ class SecondWindow:
 
         self.text_box2.insert(tk.END, translation)  # 插入长文本
 
-
+# 创建主窗口并运行程序
 root = tk.Tk()
 app = FirstWindow(root)
 root.mainloop()
